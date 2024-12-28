@@ -29,63 +29,59 @@
               },
               spacing: {
                 '128': '62.5rem',
-                '114': '28.125rem',
+                'cardh': '35rem',
                 'dlw': '33px',
                 'dlh': '25px',
+              },
+              backgroundImage: {
+                'background': "url('/bg-image.png'/)",
               }
         }
     },
   }
       </script>
 </head>
-<body class="min-h-screen flex flex-col font-serif justify-center backdrop-blur-md bg-cover bg-no-repeat bg-dgrey" style="background-image: url(bg-image.png);">
+<body class="min-h-full md:min-h-screen xl:min-h-screen w-full flex flex-col font-serif justify-center backdrop-blur-md bg-cover bg-fixed bg-center aspect-auto bg-[url('/bg-image.png')]">
     <!-- Navbar -->
-    <div class="bg-dgrey w-3/5 h-fit-content justify-center list-none text-xl items-center mx-auto rounded-md" style="box-shadow: 0px 0px 10px #5563e5;">
+    <div class="bg-dgrey w-full lg:w-3/5 h-fit-content lg:h-fit-content justify-center list-none text-lg xl:text-xl items-center mx-auto rounded-md shadow-[0_2px_0px_0px_rgba(85,99,229,1)] md:shadow-[0_0px_0px_2px_rgba(85,99,229,1)] lg:shadow-[0_0px_0px_2px_rgba(85,99,229,1)]">
         <ul class="flex flex-row gap-8 list-none justify-center text-savoy-blue py-4">
             <li class="text-periwinkle"><a href="index.html">Home</a></li>
             <li><a href="https://discord.azalea.team/">Azalea Network</a></li>
         </ul>
     </div>
     <!-- Card / BG -->
-    <div class="bg-dgrey rounded w-3/5 h-114 flex flex-col gap-5 mx-auto my-5 rounded-md" style="box-shadow: 0px 0px 10px #5563e5;">
+    <div class="lg:bg-dgrey rounded w-full lg:w-3/5 h-full xl:h-cardh flex flex-col gap-5 mx-auto my-5 rounded-md lg:shadow-[0_0px_0px_2px_rgba(85,99,229,1)]">
         <!-- Container -->
-         <div class="pt-5 pl-20 flex flex-row gap-4">
+         <div class="pt-5 xl:pl-20 flex xl:flex-row flex-col items-center xl:gap-4">
             <!-- PFP -->
-            <img src="https://cdn.discordapp.com/avatars/714383009310048267/718d31b13423393a56b1dba61100878f.webp?size=1024&format=webp&width=640&height=640" class="rounded-lg w-40 h-40">
+            <img src="https://cdn.discordapp.com/avatars/714383009310048267/718d31b13423393a56b1dba61100878f.webp?size=1024&format=webp&width=640&height=640" class="rounded-lg w-32 h-32 xl:w-40 xl:h-40">
             <!-- Username -->
-            <div class="block pt-5">
-                <h1 class="font-normal text-4xl text-white mt-6">Jaidzn</h1>
+            <div class="block lg:pt-5">
+                <h1 class="font-normal text-center xl:text-left text-4xl text-white mt-2 xl:mt-0">Jaidzn</h1>
                 <!-- Discord -->
                 <div class="gap-2 flex flex-row">
-                    <img src="discord-logo.png" class="w-dlw h-dlh mt-1">
-                    <p class="font-extralight italic text-savoy-blue text-xl">jadezinnia</p>
+                    <img src="discord-logo.png" class="w-dlw h-dlh lg:mt-1">
+                    <p class="font-normal italic text-savoy-blue text-lg">jadezinnia</p>
                 </div>
             </div>
         </div>
         <!-- Description -->
-        <div class="flex flex-row text-white px-20 text-xl text-wrap">
+        <div class="flex flex-row text-white xl:text-left text-center px-3 lg:px-20 text-md lg:text-xl">
             <p>hallo! my name is jaiden, i'm a 21 year old gamer, i love music, video games, rainy days, cats and really warm blankets on a winter morning.<br><br>most of my experience on minecraft is management of both server staff & server communities, however i am also a very capable builder! ❤ </p>
         </div>
         <!-- Links -->
-        <div class="pt-3 max-w-screen-xl">    
-            <ul class="mx-auto flex flex-row space-x-4 justify-center text-white">
-                <li><a class="ring-1 ring-savoy-blue rounded cursor p-4 text-xl hover:ring-vista-blue transition-all" href="https://x.com/jxdeiyn/">Twitter</a></li>
-                <li><a class="ring-1 ring-savoy-blue rounded cursor p-4 text-xl hover:ring-vista-blue transition-all" href="https://en.pronouns.page/@jadezinnia">Pronouns</a></li>
-                <li><a class="ring-1 ring-savoy-blue rounded cursor p-4 text-xl hover:ring-vista-blue transition-all" href="https://www.youtube.com/@jadezinnia">YouTube</a></li>
-                <li><a class="ring-1 ring-savoy-blue rounded cursor p-4 text-xl hover:ring-vista-blue transition-all" href="https://www.albumoftheyear.org/user/jadezinnia/">AOTY</a></li>
-                <li><a class="ring-1 ring-savoy-blue rounded cursor p-4 text-xl hover:ring-vista-blue transition-all" href="https://www.last.fm/user/jadezinnia">last.fm</a></li>
-                <li><a class="ring-1 ring-savoy-blue rounded cursor p-4 text-xl hover:ring-vista-blue transition-all" href="https://namemc.com/profile/Jaidzn.2">NameMC</a></li>
-                <li><a class="ring-1 ring-savoy-blue rounded cursor p-4 text-xl hover:ring-vista-blue transition-all" href="https://minehut.wiki.gg/wiki/Jaidzn">MHWiki</a></li>
-            </ul>
+        <div class="pt-3 px-5">    
+            <div class="flex flex-row gap-y-5 xl:gap-y-3 gap-x-5 text-sm lg:text-lg xl:text-xl grid grid-flow-row xl:grid-flow-col md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-2 mx-auto text-white text-center pb-5 xl:px-12">
+                <a class="ring-1 ring-savoy-blue rounded cursor p-2 lg:p-3 hover:ring-vista-blue transition-all" href="https://x.com/jxdeiyn/">Twitter</a>
+                <a class="ring-1 ring-savoy-blue rounded cursor p-2 lg:p-3 hover:ring-vista-blue transition-all" href="https://en.pronouns.page/@jadezinnia">Pronouns</a>
+                <a class="ring-1 ring-savoy-blue rounded cursor p-2 lg:p-3 hover:ring-vista-blue transition-all" href="https://www.youtube.com/@jadezinnia">YouTube</a>
+                <a class="ring-1 ring-savoy-blue rounded cursor p-2 lg:p-3 hover:ring-vista-blue transition-all" href="https://www.albumoftheyear.org/user/jadezinnia/">AOTY</a>
+                <a class="ring-1 ring-savoy-blue rounded cursor p-2 lg:p-3 hover:ring-vista-blue transition-all" href="https://www.last.fm/user/jadezinnia">last.fm</a>
+                <a class="ring-1 ring-savoy-blue rounded cursor p-2 lg:p-3 hover:ring-vista-blue transition-all" href="https://namemc.com/profile/Jaidzn.2">NameMC</a>
+                <a class="ring-1 ring-savoy-blue rounded cursor p-2 lg:p-3 hover:ring-vista-blue transition-all" href="https://minehut.wiki.gg/wiki/Jaidzn">MHWiki</a>
+                <a class="ring-1 ring-savoy-blue rounded cursor p-2 lg:p-3 hover:ring-vista-blue transition-all" href="https://jadezinnia.bsky.social/">BlueSky</a>
+            </div>
         </div>
-    </div>
-    <div class="text-white text-s flex flex-row mx-auto gap-5 text-center list-none my-12">
-        <li><a class="ring ring-purple-700 rounded cursor p-4 hover:ring-vista-blue transition-all" href="https://jamiepurpleart.carrd.co/">Jamie ❤</a></li>
-        <li><a class="ring ring-pink-700 rounded cursor p-4 hover:ring-vista-blue transition-all" href="https://astrid.sh">Astrid ❤</a></li>
-        <li><a class="ring ring-green-700 rounded cursor p-4 hover:ring-vista-blue transition-all" href="https://github.com/honkling">Rosalyn ❤</a></li>
-        <li><a class="ring ring-blue-700 rounded cursor p-4 hover:ring-vista-blue transition-all" href="https://github.com/Recal">Cal ❤</a></li>
-        <li><a class="ring ring-red-700 rounded cursor p-4 hover:ring-vista-blue transition-all" href="https://x.com/flavored_dev">Apple ❤</a></li>
-        <li><a class="ring ring-orange-700 rounded cursor p-4 hover:ring-vista-blue transition-all" href="https://x.com/dragonet64/">Dragonet ❤</a></li>
     </div>
 </body>
 </html>
