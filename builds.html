@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jaiden ❤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'savoy-blue': '#5563E5',
+            'tropical-indigo': '#7886FF',
+            'vista-blue': '#959EF1',
+            'periwinkle': '#bbc0f4',
+            'lavender': '#E6E6FF',
+            'lgrey': '#1e1e1e',
+            'dgrey': '#151515',
+            'navbar-1': '#202020',
+            'navbar-2': '#191919',
+          },
+          fontFamily: {
+            serif: ['Unna', 'serif'],
+          },
+          spacing: {
+            '128': '62.5rem',
+            'cardh': '35rem',
+            'dlw': '33px',
+            'dlh': '25px',
+          },
+          backgroundImage: {
+            'background': "url('/bg-image.png'/)",
+          }
+        }
+      },
+    }
+  </script>
+</head>
+
+<body
+  class="min-h-full md:min-h-screen xl:min-h-screen w-full flex flex-col font-serif justify-center backdrop-blur-lg bg-cover bg-fixed bg-center aspect-auto bg-[url('/bg-image.png')]">
+  <!-- Navbar -->
+  <div
+    class="bg-dgrey w-full lg:w-3/5 h-fit-content lg:h-fit-content justify-center list-none text-lg xl:text-xl items-center mx-auto rounded-xl shadow-[0_0px_0px_2px_rgba(255,184,106,1)] md:shadow-[0_0px_0px_2px_rgba(255,184,106,1)] lg:shadow-[0_0px_0px_2px_rgba(255,184,106,1)]">
+    <ul class="flex flex-row gap-8 list-none justify-center text-white py-4">
+      <li><a href="index.html">Home</a></li>
+      <li class="text-orange-200"><a href="builds.html">Builds</a></li>
+      <li><a href="oops.html">Blog</a></li>
+    </ul>
+  </div>
+  <!-- Card / BG -->
+  <div
+    class="pt-5 lg:bg-dgrey rounded w-full lg:w-3/5 h-full xl:h-cardh flex flex-row gap-2 mx-auto my-5 rounded-xl lg:shadow-[0_0px_0px_2px_rgba(255,184,106,1)]">
+    <div class="pt-3 flex-1">
+      <!-- Minehut Builds -->
+      <div class="cursor transition-all flex flex-col items-center">
+        <img src="bg-image.png" class="object-cover rounded-full w-[150px] h-[150px] mb-5">
+        <a class="ring-1 ring-orange-200 rounded p-2 lg:p-3 text-white text-xl hover:bg-lgrey" href="oops.html">For Minehut</a>
+      </div>
+    </div>
+    <div class="pt-3 flex-1">
+      <!-- Smore Builds -->
+      <div class="cursor transition-all flex flex-col items-center">
+        <img src="builds/smore-preview.png" class="object-cover rounded-full w-[150px] h-[150px] mb-5">
+        <a class="ring-1 ring-orange-200 rounded p-2 lg:p-3 text-white text-xl hover:bg-lgrey" href="oops.html">For Smore</a>
+      </div>
+    </div>
+    <div class="pt-3 flex-1">
+      <!-- Nacht der Untoten -->
+      <div class="cursor transition-all flex flex-col items-center">
+        <img src="builds/nacht-preview.png" class="object-cover rounded-full w-[150px] h-[150px] mb-5">
+        <a class="ring-1 ring-orange-200 rounded p-2 lg:p-3 text-white text-xl hover:bg-lgrey" href="oops.html">Nacht der Untoten</a>
+      </div>
+    </div>
+    <div class="pt-3 flex-1">
+      <!-- Built for Minehut Events -->
+      <div class="cursor transition-all flex flex-col items-center">
+        <img src="builds/events-preview.png" class="object-cover rounded-full w-[150px] h-[150px] mb-5">
+        <a class="ring-1 ring-orange-200 rounded p-2 lg:p-3 text-white text-xl hover:bg-lgrey" href="oops.html">For MH Events</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
