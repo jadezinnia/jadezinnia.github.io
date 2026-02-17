@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jaiden ❤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function showTab(button, tabId) {
+      const section = button.closest('.tab-section');
+
+      section.querySelectorAll('.tab-image').forEach(img => {
+        img.classList.add('hidden');
+      });
+
+      section.querySelector('#' + tabId).classList.remove('hidden');
+    }
+  </script>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'savoy-blue': '#5563E5',
+            'tropical-indigo': '#7886FF',
+            'vista-blue': '#959EF1',
+            'periwinkle': '#bbc0f4',
+            'lavender': '#E6E6FF',
+            'lgrey': '#1e1e1e',
+            'dgrey': '#151515',
+            'navbar-1': '#202020',
+            'navbar-2': '#191919',
+          },
+          fontFamily: {
+            serif: ['Unna', 'serif'],
+          },
+          spacing: {
+            '128': '62.5rem',
+            'cardh': '35rem',
+            'dlw': '33px',
+            'dlh': '25px',
+          },
+          backgroundImage: {
+            'background': "url('/bg-image.png'/)",
+          }
+        }
+      },
+    }
+  </script>
+</head>
+
+<body
+  class="min-h-full md:min-h-screen xl:min-h-screen w-full flex flex-col font-serif mt-5 backdrop-blur-lg bg-cover bg-fixed bg-center aspect-auto bg-zinc-900 tracking-wide">
+  <!-- Navbar -->
+  <div
+    class="w-full lg:w-3/5 h-fit-content lg:h-fit-content justify-center list-none text-lg xl:text-xl items-center mx-auto rounded-xl">
+    <ul class="flex flex-row gap-2 list-none justify-center text-white">
+      <li><a href="../index.html">Home</a></li>
+      <li>—</li>
+      <li><a href="../builds.html">Builds</a></li>
+      <li>—</li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+  </div>
+  <!-- Card / BG -->
+  <div class="pt-3 rounded w-full lg:w-3/5 h-full xl:h-cardh flex flex-col gap-5 mx-auto rounded-xl">
+    <!-- Description -->
+    <div class="flex flex-col list-none justify-center text-white text-center px-3 lg:px-20 text-md lg:text-xl">
+      <h1 class="text-orange-300 text-4xl mb-5">Building for Smore
+      <span class="italic text-lg text-white"><br>Written on Feb 17, 2026, built during Jul 2025</span></h1>
+      <img src="smore/full-3.png" class="justify-center w-[75%] mb-5 mx-auto">
+      <p class="w-3/4 mx-auto">Smore was a server that I co-own with a lot of my friends under the <a href="https://discord.azalea.team/" class="text-orange-200">Azalea Network</a>. It served as both an SMP and a Creative server, offering both experiences. Though we failed to release it in 2025 due to circumstances out of our hands, I worked on both the creative and survival spawns for the server.</p>
+      <hr class="mt-5">
+      <h1 class="text-3xl flex text-center font-bold justify-center pt-2 text-orange-300">SMP World Spawn</h1>
+      <div class="tab-section">
+        <div class="flex justify-center gap-4 py-3">
+          <button onclick="showTab(this, 'foundation')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Foundation
+          </button>
+          <button onclick="showTab(this, 'housing')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Housing
+          </button>
+          <button onclick="showTab(this, 'full-1')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Full (1)
+          </button>
+          <button onclick="showTab(this, 'full-2')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Full (2)
+          </button>
+          <button onclick="showTab(this, 'full-3')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Full (3)
+          </button>
+          <button onclick="showTab(this, 'full-4')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Full (4)
+          </button>
+        </div>
+        <div class="flex justify-center">
+          <img id="foundation" src="smore/foundation.png"
+            class="tab-image w-3/4 justify-center w-[75%] mt-3 mb-5 mx-auto">
+          <img id="housing" src="smore/house.png"
+            class="tab-image w-3/4 hidden justify-center w-[75%] mt-3 mb-5 mx-auto">
+          <img id="full-1" src="smore/full-1.png"
+            class="tab-image w-3/4 hidden justify-center w-[75%] mt-3 mb-5 mx-auto">
+          <img id="full-2" src="smore/full-2.png"
+            class="tab-image w-3/4 hidden justify-center w-[75%] mt-3 mb-5 mx-auto">
+          <img id="full-3" src="smore/full-3.png"
+            class="tab-image w-3/4 hidden justify-center w-[75%] mt-3 mb-5 mx-auto">
+          <img id="full-4" src="smore/full-4.png"
+            class="tab-image w-3/4 hidden justify-center w-[75%] mt-3 mb-5 mx-auto">
+        </div>
+      </div>
+      <p>The first image shows the foundation of the build - a small little fenced campsite and the Smore logo in the sky. This was not built by myself, it was built by my friend PoikNerd.
+      </p>
+      <p><br>The second image displays a house that I built for the zone, next to a pond I also built. The zone's structure was to be a village surrounding this campsite, a basic but unintrusive spawn for our SMP world. I constructed all of the area surrounding the campsite. I even baked some secrets in the houses! <br><br>The succeeding images show the complete version of the build in full. As you can see, the zone is small but detailed as to give a good balance between looking nice when a player first joins and also not intruding on their ability to explore the world and get to the area they can break blocks in a quicker fashion.
+      </p>
+      <hr class="mt-3">
+      <h1 class="text-3xl flex text-center font-bold justify-center pt-2 text-orange-300">Creative World Spawn</h1>
+      <div class="tab-section">
+        <div class="flex justify-center gap-4 py-3">
+          <button onclick="showTab(this, 'creative-1')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Image 1
+          </button>
+          <button onclick="showTab(this, 'creative-2')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Image 2
+          </button>
+          <button onclick="showTab(this, 'creative-3')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+            Image 3
+          </button>
+        </div>
+        <div class="flex justify-center">
+          <img id="creative-1" src="smore/creative-1.png"
+            class="tab-image w-3/4 justify-center w-[75%] mt-3 mb-5 mx-auto">
+          <img id="creative-2" src="smore/creative-2.png"
+            class="tab-image w-3/4 hidden justify-center w-[75%] mt-3 mb-5 mx-auto">
+          <img id="creative-3" src="smore/creative-3.png"
+            class="tab-image w-3/4 hidden justify-center w-[75%] mt-3 mb-5 mx-auto">
+        </div>
+      </div>
+      <p>For the spawn for the creative world, I went with a different aesthetic. Since we were in a plots world, I decided I'd commit to the boundaries of the plot and also try something different. I went with different blocks to imitate a Lego-like palette; opting to go for concrete, concrete powder and wool over grass, moss, dirt, etc.</p>
+      <p><br>Just like the survival spawn, this spawn was designed to look nice, be unintrusive and allow the player to exit quickly.<br><br>Though Smore is in a limbo state currently, I do hope that it will see a release in the future so that these builds can be used. These builds didn't take that long to make, and are generally minimal as intended.</p>
+      <div class="p-5"></div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
