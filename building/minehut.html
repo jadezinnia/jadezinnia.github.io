@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jaiden ❤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+function showTab(button, tabId) {
+  const section = button.closest('.tab-section');
+
+  section.querySelectorAll('.tab-image').forEach(img => {
+    img.classList.add('hidden');
+  });
+
+  section.querySelector('#' + tabId).classList.remove('hidden');
+}
+</script>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'savoy-blue': '#5563E5',
+            'tropical-indigo': '#7886FF',
+            'vista-blue': '#959EF1',
+            'periwinkle': '#bbc0f4',
+            'lavender': '#E6E6FF',
+            'lgrey': '#1e1e1e',
+            'dgrey': '#151515',
+            'navbar-1': '#202020',
+            'navbar-2': '#191919',
+          },
+          fontFamily: {
+            serif: ['Unna', 'serif'],
+          },
+          spacing: {
+            '128': '62.5rem',
+            'cardh': '35rem',
+            'dlw': '33px',
+            'dlh': '25px',
+          },
+          backgroundImage: {
+            'background': "url('/bg-image.png'/)",
+          }
+        }
+      },
+    }
+  </script>
+</head>
+
+<body
+  class="min-h-full md:min-h-screen xl:min-h-screen w-full flex flex-col font-serif mt-5 backdrop-blur-lg bg-cover bg-fixed bg-center aspect-auto bg-zinc-900 tracking-wide">
+  <!-- Navbar -->
+  <div
+    class="w-full lg:w-3/5 h-fit-content lg:h-fit-content justify-center list-none text-lg xl:text-xl items-center mx-auto rounded-xl">
+    <ul class="flex flex-row gap-2 list-none justify-center text-white">
+      <li><a href="../index.html">Home</a></li>
+      <li>—</li>
+      <li><a href="../builds.html">Builds</a></li>
+      <li>—</li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+  </div>
+  <!-- Card / BG -->
+  <div class="pt-3 rounded w-full lg:w-3/5 h-full xl:h-cardh flex flex-col gap-5 mx-auto rounded-xl">
+    <!-- Description -->
+    <div class="flex flex-col list-none justify-center text-white text-center px-3 lg:px-20 text-md lg:text-xl">
+      <h1 class="text-orange-300 text-4xl mb-5">Building for Minehut</h1>
+      <img src="minehut/meeting-room.png" class="justify-center w-[75%] mb-5 mx-auto">
+      <p class="w-3/4 mx-auto"><b><i>Disclaimer: I did not build the entirety of a Minehut lobby. I made improvements and changes to the existing lobby built before me.</i></b><br><br>During
+        my time at Minehut as a volunteer moderator, I got the opportunity to add some additions to the lobby at the
+        time. (2024's <a href="https://minehut.wiki.gg/wiki/Lobbies#Construction_Lobby"
+          class="text-orange-200">Construction Lobby</a>)</p>
+      <p><br>My first addition to the lobby was a meeting room, as you can see above, for the staff team to convene in
+        during a staff meeting. While building this, I was accompanied by my friends who offered helpful insight -
+        though the general design is my own. The version you see above is the final version, but it did undergo some
+        changes.</p>
+      <img src="minehut/meeting-room-2.png" class="justify-center w-[75%] mt-5 mb-5 mx-auto">
+      <p>Above, you can see an earlier version of this meeting room featuring a more simple floor, ceiling and stage.
+        You can actually see this room in use as the moderators are in their chairs (well, some of them, atleast!)</p>
+          <hr class="mt-2">
+      <h1 class="text-3xl flex text-center font-bold justify-center pt-2 text-orange-300">Library</h1>
+      <div class="tab-section">
+      <div class="flex justify-center gap-4 py-3">
+        <button onclick="showTab(this, 'old-library')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Complete Build
+        </button>
+        <button onclick="showTab(this, 'new-library')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          WIP Version
+        </button>
+      </div>
+      <hr class="mb-2">
+      <div class="flex justify-center">
+        <img id="old-library" src="minehut/library.png"
+          class="tab-image w-3/4 justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="new-library" src="minehut/library-2.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+      </div>
+      </div>
+      <p>Here's the library I built - a vast improvement over the basic, small, undetailed server room that preceded it.</p>
+      <p>Above there is also an earlier version of this build showing off the redstone staircase that allows access to the second
+        level. This staircase is activated by the mouse (blackstone button) on the desk. <br><br>In my opinion, builds
+        in which the players can interact with something are extremely effective in lobbies like Minehut's because it
+        really makes exploring the lobby interesting. Interactive builds are great for player retention in the lobbies.
+      </p>
+      <hr class="mt-2">
+      <h1 class="text-3xl flex text-center font-bold justify-center pt-2 text-orange-300">Server Room</h1>
+      <div class="tab-section">
+      <div class="flex justify-center gap-4 py-3">
+        <button onclick="showTab(this, 'server-room')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Old Version
+        </button>
+        <button onclick="showTab(this, 'new-server-room')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          New Version
+        </button>
+        <button onclick="showTab(this, 'new-server-room-2')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          New Version (2)
+        </button>
+      </div>
+      <hr class="mb-2">
+      <div class="flex justify-center">
+        <img id="server-room" src="minehut/server-room.png"
+          class="tab-image w-3/4 justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="new-server-room" src="../bg-image.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="new-server-room-2" src="minehut/server-room-2.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+      </div>
+      </div>
+      <p>I replaced the old server room with a much better, improved build in the fancy wooden library above.<br><br>The server room was not removed entirely though—it was moved into an area accessible through a secret painting.
+        It was repurposed into a server and storage room. In the above image, you can see the storage room section of
+        the build.</p>
+      <p>Then in the image above, you can see the servers behind the glass. This is a great improvement over what was
+        previously there. My intention with this room was to feel like it was intentionally somewhere that was behind
+        the scenes of everything. <br><br>The previous server room featured signs on each observer that obviously showed
+        what the build was, whereas this version does storytelling by environment and doesn't need such measures.</p>
+      <hr class="mt-2">
+      <h1 class="text-3xl flex text-center font-bold justify-center pt-2 text-orange-300">Administrative Offices</h1>
+      <div class="tab-section">
+      <div class="flex justify-center gap-4 py-3">
+        <button onclick="showTab(this, 'old-offices')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Old Version
+        </button>
+        <button onclick="showTab(this, 'old-offices-2')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Old Version (2)
+        </button>
+        <button onclick="showTab(this, 'new-offices')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          New Version
+        </button>
+        <button onclick="showTab(this, 'new-offices-2')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          New Version (2)
+        </button>
+      </div>
+    <hr class="mb-2">
+      <div class="flex justify-center">
+        <img id="old-offices" src="minehut/sle-offices.png"
+          class="tab-image w-3/4 justify-center w-[75%] mt-5 mb-5 mx-auto">
+          <img id="old-offices-2" src="minehut/old-offices.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="new-offices" src="minehut/new-offices.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="new-offices-2" src="minehut/new-offices-2.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+      </div>
+      </div>
+      <p>Before the new server room was built, you can see what was in place of it. These were meant to be the old offices
+        of Super League Enterprise employees—a reference to the history of Minehut within the lobby. Safe to say, it
+        doesn't look good and clearly and obviously needed improvement.<br><br>There were also even older offices referencing the original Minehut creators and developers. Though, it didn't
+        really make much sense as this was a lobby created during the GamerSafer era of Minehut. The reference was cool,
+        but in practice it didn't make sense. Plus—it was not pleasing to the eyes.
+        <br><br>You can also see the brand new offices I built in place of it. To be honest, I still have issues with
+        the floor and
+        deepslate brick elements of this room, but I'm much happier with it than the original build.<br><br>The second
+        new image depicts the upper portions of this room. You accessed this room through the previous storage
+        and server room, as I thought it made sense that the administrative offices would be in close proximity to the
+        servers.
+      </p>
+      <hr class="mt-2">
+      <h1 class="text-3xl flex text-center font-bold justify-center pt-2 text-orange-300">Hallway to These Rooms</h1>
+      <div class="tab-section">
+      <div class="flex justify-center gap-4 py-3">
+        <button onclick="showTab(this, 'old-hallway')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Old Version
+        </button>
+        <button onclick="showTab(this, 'new-hallway')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          New Version
+        </button>
+      </div>
+    <hr class="mb-2">
+      <div class="flex justify-center">
+        <img id="old-hallway" src="minehut/hallway.png"
+          class="tab-image w-3/4 justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="new-hallway" src="minehut/hallway-2.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+      </div>
+      </div>
+      <p>Of course, to get to this area, you needed to go through this hallway. The small, crowded hallway just wouldn't
+        cut it.</p>
+      <p>In the new version, you can see the rejuvenated version of it. I thought the use of lecterns as the floor was
+        clever, and the hallway now matches the environment of the other rooms way better.</p>
+      <hr class="mt-2">
+      <h1 class="text-3xl flex text-center font-bold justify-center pt-2 text-orange-300">Building Interior</h1>
+      <div class="tab-section">
+      <div class="flex justify-center gap-4 py-3">
+        <button onclick="showTab(this, 'interior-1')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Outside
+        </button>
+        <button onclick="showTab(this, 'interior-2')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Room 1
+        </button>
+        <button onclick="showTab(this, 'interior-3')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Room 2
+        </button>
+        <button onclick="showTab(this, 'interior-4')" class="tab-btn px-4 py-2 bg-zinc-700 text-white rounded">
+          Room 3
+        </button>
+      </div>
+      <hr class="mb-2">
+      <div class="flex justify-center">
+        <img id="interior-1" src="minehut/interior.png"
+          class="tab-image w-3/4 justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="interior-2" src="minehut/interior-2.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="interior-3" src="minehut/interior-3.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+        <img id="interior-4" src="minehut/interior-4.png"
+          class="tab-image w-3/4 hidden justify-center w-[75%] mt-5 mb-5 mx-auto">
+        </div>
+      </div>
+      <p>As my goal was to provide life where there was not in the lobbies, I saw this building's exterior and decided to add some interior design just to add more personality to the lobby.</p>
+      <p class="w-3/4 mx-auto"><br>I had so much fun adding these builds to the Minehut lobby and would take the opportunity again in a heartbeat if it were presented to me, although I think that ship has sailed since I'm no longer part of the volunteer moderation team.<br><br>I was not paid to do this, nor did I expect or ask to be. I simply loved the community and the experience was surreal. It's an incredible feeling seeing your own build on production.</p>
+      <img src="minehut/final.png" class="justify-center w-[75%] mt-5 mb-5 mx-auto">
+      <div class="p-5"></div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
